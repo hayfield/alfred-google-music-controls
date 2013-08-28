@@ -1185,6 +1185,6 @@ end alfred_script</string>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/hayfield/alfred-google-music-controls</string>
 </dict>
 </plist>
