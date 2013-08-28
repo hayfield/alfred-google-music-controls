@@ -5,6 +5,10 @@ Controls for Google Music for Alfred.
 
 The commands are for Google Music running in Chrome.
 
+### Obtaining
+
+The latest built workflow can be obtained from the [releases](https://github.com/hayfield/alfred-google-music-controls/releases) page.
+
 ### Commands
 
 All commands use the `gm` keyword. Available commands are:
