@@ -698,7 +698,7 @@
 			<dict>
 				<key>applescript</key>
 				<string>
-### setParamAndReturnStr artist document.getElementById('player-artist').innerText.trim() "Current&nbsp;artist:&nbsp;"&amp;artist ###
+### setParamAndReturnStr artist document.getElementById('player-artist').innerText.trim() "Current&nbsp;artist:&nbsp;" ###
 				</string>
 				<key>cachescript</key>
 				<false/>
@@ -757,7 +757,7 @@
 			<dict>
 				<key>applescript</key>
 				<string>
-### setParamAndReturnStr trackName document.getElementById('playerSongTitle').innerText.trim() "Current&nbsp;track:&nbsp;"&amp;trackName ###
+### setParamAndReturnStr trackName document.getElementById('playerSongTitle').innerText.trim() "Current&nbsp;track:&nbsp;" ###
 				</string>
 				<key>cachescript</key>
 				<false/>
@@ -837,7 +837,7 @@
 			<dict>
 				<key>applescript</key>
 				<string>
-### setParamAndReturnStr trackLength document.querySelector('.currently-playing[data-col=duration]').innerText.trim() "Track&nbsp;length:&nbsp;"&amp;trackLength ###
+### setParamAndReturnStr trackLength document.querySelector('.currently-playing&nbsp;[data-col=duration]').innerText.trim() "Track&nbsp;length:&nbsp;" ###
 				</string>
 				<key>cachescript</key>
 				<false/>
@@ -900,7 +900,7 @@
 			<dict>
 				<key>applescript</key>
 				<string>
-### setParamAndReturnStr currentAlbum document.querySelector('.player-album').innerText.trim() "Current&nbsp;album:&nbsp;"&amp;currentAlbum ###
+### setParamAndReturnStr currentAlbum document.querySelector('.player-album').innerText.trim() "Current&nbsp;album:&nbsp;" ###
 				</string>
 				<key>cachescript</key>
 				<false/>

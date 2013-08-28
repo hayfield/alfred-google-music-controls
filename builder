@@ -43,7 +43,7 @@ for line in lines:
 
         # replace placeholders with the new values
         for cmdNum in range(1, len(splitLine) - 2):
-            scriptLines = [line.replace('##' + str(cmdNum), splitLine[cmdNum + 1]) for line in scriptLines]
+            scriptLines = [line.replace('##' + str(cmdNum), splitLine[cmdNum + 1].replace('&nbsp;', ' ')) for line in scriptLines]
 
         # insert the script into the output
         output.extend(scriptLines)
