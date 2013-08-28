@@ -722,7 +722,7 @@
 				<key>text</key>
 				<string>Current Band</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
@@ -781,7 +781,7 @@
 				<key>text</key>
 				<string>Current Song</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
