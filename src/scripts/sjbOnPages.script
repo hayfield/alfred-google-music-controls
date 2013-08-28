@@ -2,7 +2,7 @@ on alfred_script(q)
   tell application "Google Chrome"
     repeat with w in (every window)
       repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to execute javascript "SJBpost('###SJBParam###');"
+        tell t to execute javascript "SJBpost('###');"
         return true
       end repeat
     end repeat

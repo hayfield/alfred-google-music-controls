@@ -587,7 +587,9 @@ end alfred_script</string>
       end repeat
     end repeat
   end tell
-end alfred_script</string>
+end alfred_script
+### sjbOnPages toggleRepeat ###
+</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
