@@ -3,6 +3,8 @@ Alfred Google Music Controls
 
 Controls for Google Music for Alfred.
 
+The commands are for Google Music running in Chrome.
+
 ### Commands
 
 All commands use the `gm` keyword. Available commands are:
