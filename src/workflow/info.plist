@@ -330,17 +330,9 @@
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>on alfred_script(q)
-  tell application "Google Chrome"
-    -- Pause the track
-    repeat with w in (every window)
-      repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to execute javascript "SJBpost('nextSong');"
-        return true
-      end repeat
-    end repeat
-  end tell
-end alfred_script</string>
+				<string>
+				### sjbOnPages nextSong ###
+				</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
@@ -397,17 +389,9 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>on alfred_script(q)
-  tell application "Google Chrome"
-    -- Pause the track
-    repeat with w in (every window)
-      repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to execute javascript "SJBpost('playPause');"
-        return true
-      end repeat
-    end repeat
-  end tell
-end alfred_script</string>
+				<string>
+				### sjbOnPages playPause ###
+				</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
@@ -464,17 +448,9 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>on alfred_script(q)
-  tell application "Google Chrome"
-    -- Pause the track
-    repeat with w in (every window)
-      repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to execute javascript "SJBpost('prevSong');"
-        return true
-      end repeat
-    end repeat
-  end tell
-end alfred_script</string>
+				<string>
+				### sjbOnPages prevSong ###
+				</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
@@ -531,17 +507,9 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>on alfred_script(q)
-  tell application "Google Chrome"
-    -- Pause the track
-    repeat with w in (every window)
-      repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to execute javascript "SJBpost('toggleShuffle');"
-        return true
-      end repeat
-    end repeat
-  end tell
-end alfred_script</string>
+				<string>
+				### sjbOnPages toggleShuffle ###
+				</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
@@ -577,19 +545,9 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>on alfred_script(q)
-  tell application "Google Chrome"
-    -- Pause the track
-    repeat with w in (every window)
-      repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to execute javascript "SJBpost('toggleRepeat');"
-        return true
-      end repeat
-    end repeat
-  end tell
-end alfred_script
-### sjbOnPages toggleRepeat ###
-</string>
+				<string>
+				### sjbOnPages toggleRepeat ###
+				</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
@@ -663,17 +621,9 @@ end alfred_script
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>on alfred_script(q)
-  tell application "Google Chrome"
-    -- Pause the track
-    repeat with w in (every window)
-      repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to execute javascript "SJBpost('thumbsUpPlayer');"
-        return true
-      end repeat
-    end repeat
-  end tell
-end alfred_script</string>
+				<string>
+				### sjbOnPages thumbsUpPlayer ###
+				</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
@@ -709,17 +659,9 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>on alfred_script(q)
-  tell application "Google Chrome"
-    -- Pause the track
-    repeat with w in (every window)
-      repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to execute javascript "SJBpost('thumbsDownPlayer');"
-        return true
-      end repeat
-    end repeat
-  end tell
-end alfred_script</string>
+				<string>
+				### sjbOnPages thumbsDownPlayer ###
+				</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
