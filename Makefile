@@ -1,2 +1,2 @@
 workflow:
-	ditto	-ck	--rsrc	--sequesterRsrc	src	"Google Music Controls.alfredworkflow"
+	ditto	-ck	--rsrc	--sequesterRsrc	'./src/workflow/'	"Google Music Controls.alfredworkflow"
