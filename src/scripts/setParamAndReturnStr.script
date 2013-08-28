@@ -1,9 +1,10 @@
 on alfred_script(q)
   tell application "Google Chrome"
+    -- Pause the track
     repeat with w in (every window)
       repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to execute javascript "SJBpost('##1');"
-        return true
+        tell t to set ##1 to execute javascript ##2
+        return ##3
       end repeat
     end repeat
   end tell

@@ -33,17 +33,17 @@ for line in lines:
         # if there's a match, sub in the required script
         splitLine = line.split(' ')
         scriptName = splitLine[1]
-        command = splitLine[2]
         scriptLines = []
         
         # read the script
         scriptPath = os.path.join(scriptsDir, scriptName + '.script')
-        print scriptPath
         if os.path.isfile(scriptPath):
             with open(scriptPath) as openedFile:
                 scriptLines = openedFile.readlines()
-        # replace placeholders with the new value
-        scriptLines = [line.replace('###', command) for line in scriptLines]
+
+        # replace placeholders with the new values
+        for cmdNum in range(1, len(splitLine) - 2):
+            scriptLines = [line.replace('##' + str(cmdNum), splitLine[cmdNum + 1]) for line in scriptLines]
 
         # insert the script into the output
         output.extend(scriptLines)

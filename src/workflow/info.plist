@@ -331,7 +331,7 @@
 			<dict>
 				<key>applescript</key>
 				<string>
-				### sjbOnPages nextSong ###
+### sjbOnPages nextSong ###
 				</string>
 				<key>cachescript</key>
 				<false/>
@@ -390,7 +390,7 @@
 			<dict>
 				<key>applescript</key>
 				<string>
-				### sjbOnPages playPause ###
+### sjbOnPages playPause ###
 				</string>
 				<key>cachescript</key>
 				<false/>
@@ -449,7 +449,7 @@
 			<dict>
 				<key>applescript</key>
 				<string>
-				### sjbOnPages prevSong ###
+### sjbOnPages prevSong ###
 				</string>
 				<key>cachescript</key>
 				<false/>
@@ -508,7 +508,7 @@
 			<dict>
 				<key>applescript</key>
 				<string>
-				### sjbOnPages toggleShuffle ###
+### sjbOnPages toggleShuffle ###
 				</string>
 				<key>cachescript</key>
 				<false/>
@@ -546,7 +546,7 @@
 			<dict>
 				<key>applescript</key>
 				<string>
-				### sjbOnPages toggleRepeat ###
+### sjbOnPages toggleRepeat ###
 				</string>
 				<key>cachescript</key>
 				<false/>
@@ -622,7 +622,7 @@
 			<dict>
 				<key>applescript</key>
 				<string>
-				### sjbOnPages thumbsUpPlayer ###
+### sjbOnPages thumbsUpPlayer ###
 				</string>
 				<key>cachescript</key>
 				<false/>
@@ -660,7 +660,7 @@
 			<dict>
 				<key>applescript</key>
 				<string>
-				### sjbOnPages thumbsDownPlayer ###
+### sjbOnPages thumbsDownPlayer ###
 				</string>
 				<key>cachescript</key>
 				<false/>
@@ -697,17 +697,9 @@
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>on alfred_script(q)
-  tell application "Google Chrome"
-    -- Pause the track
-    repeat with w in (every window)
-      repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to set artist to execute javascript "document.getElementById('player-artist').innerText.trim()"
-        return "Current artist: " &amp; artist
-      end repeat
-    end repeat
-  end tell
-end alfred_script</string>
+				<string>
+### setParamAndReturnStr artist document.getElementById('player-artist').innerText.trim() "Current&nbsp;artist:&nbsp;"&amp;artist ###
+				</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
@@ -764,17 +756,9 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>on alfred_script(q)
-  tell application "Google Chrome"
-    -- Pause the track
-    repeat with w in (every window)
-      repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to set trackName to execute javascript "document.getElementById('playerSongTitle').innerText.trim()"
-        return "Current track: " &amp; trackName
-      end repeat
-    end repeat
-  end tell
-end alfred_script</string>
+				<string>
+### setParamAndReturnStr trackName document.getElementById('playerSongTitle').innerText.trim() "Current&nbsp;track:&nbsp;"&amp;trackName ###
+				</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
@@ -852,17 +836,9 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>on alfred_script(q)
-  tell application "Google Chrome"
-    -- Pause the track
-    repeat with w in (every window)
-      repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to set trackLength to execute javascript "document.querySelector('.currently-playing [data-col=duration]').innerText.trim()"
-        return "Track length: " &amp; trackLength
-      end repeat
-    end repeat
-  end tell
-end alfred_script</string>
+				<string>
+### setParamAndReturnStr trackLength document.querySelector('.currently-playing[data-col=duration]').innerText.trim() "Track&nbsp;length:&nbsp;"&amp;trackLength ###
+				</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
@@ -923,17 +899,9 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>on alfred_script(q)
-  tell application "Google Chrome"
-    -- Pause the track
-    repeat with w in (every window)
-      repeat with t in (every tab whose URL contains "play.google.com/music") of w
-        tell t to set currentAlbum to execute javascript "document.querySelector('.player-album').innerText.trim()"
-        return "Current album: " &amp; currentAlbum
-      end repeat
-    end repeat
-  end tell
-end alfred_script</string>
+				<string>
+### setParamAndReturnStr currentAlbum document.querySelector('.player-album').innerText.trim() "Current&nbsp;album:&nbsp;"&amp;currentAlbum ###
+				</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
