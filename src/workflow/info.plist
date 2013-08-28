@@ -427,7 +427,7 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>keyword</key>
 				<string>gm previous</string>
 				<key>subtext</key>
@@ -435,7 +435,7 @@
 				<key>text</key>
 				<string>Previous Track</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
